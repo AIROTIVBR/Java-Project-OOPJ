@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+}
+
+.login-SAN{
+    width: 100vw;
+    height: 50vb;
+    background: #ffffff;
+    display:flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.up-login{
+    width: 50vw;
+    height: 100vh;
+}
+
+.up-login > h1{
+    color: #00995ccc;
+    padding: 30px;
+}
+
+.center-login{
+    width: 100vw;
+    height: 100vb;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 60%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 30px;
+    background: #004e4c;
+    border-radius: 20px;
+}
