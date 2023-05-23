@@ -1,0 +1,16 @@
+.navbar-nav .nav-link {
+    color: white
+}
+
+.navbar-brand{
+    color: white;
+}
+
+.navbar-brand:hover {
+    color: white !important;
+}
+
+.card {
+    width: 700px;
+    height: 500px;
+}   
