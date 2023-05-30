@@ -1,0 +1,26 @@
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.navbar-brand:hover {
+  color: white !important;
+}
+
+.cor-navbar {
+  background-color: #5cb670;
+}
+
+.card-bg {
+  background-color: #5cb670;
+}
+.font-color {
+  color: white;
+}
+
+.bi-pencil-square:hover {
+  color: black;
+}
