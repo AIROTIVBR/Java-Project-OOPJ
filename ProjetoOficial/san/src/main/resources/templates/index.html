@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css\style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="img\20230503_082024_0000-removebg-preview (1).png">
+    <title>Login-SAN</title>
+</head>
+<body>
+    <div class="login-SAN"> 
+     
+      <div class="container-fluid bg-dark">
+      
+      <div class="container" >
+        <div class="row justify-content-center row align-items-start">
+          <div class="col-auto">
+            <h1 class="display-4 font-weight-bold" style="color:aliceblue; padding: 25px; margin-top: 100px;">Acesse seu acompanhamento nutricional </h1>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="container">
+        <div class="row justify-content-center align-items-center vh-100" >
+          <div class="col-auto">
+            
+            
+
+            <div class="custom-card"> 
+            <div class="card text-white bg-success mb-3">
+                
+              <div class="card-header text-center">
+                  <img src="img\20230503_082024_0000-removebg-preview (1).png"  class="card-img-top mx-auto" style="max-width: 20%;" alt="Imagem do card" >
+                </div>
+                
+                <div class="card-body d-flex flex-column justify-content-center align-items-center" >
+                  <h5 class="mb-4" style="font-size: 2.5rem;">Insira seus dados</h5>
+                 
+                
+                <form class="my-4" id="loginForm">
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control form-control-lg" id="email">
+                  </div>
+                  <div class="mb-3">
+                    <label for="senha" class="form-label">Senha</label>
+                    <input type="password" class="form-control form-control-lg" id="senha">
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-lg">Entrar</button>
+                </form>
+                 
+              </div>
+    
+            </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+        
+  
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Impede o envio do formulário padrão
+
+      // Obtenha os valores dos campos de entrada
+      var username = document.getElementById('email').value;
+      var password = document.getElementById('senha').value;
+
+      
+
+      // Verifique o tipo de usuário e redirecione para a página de destino correspondente
+      if (username === 'admin@gmail.com' && password === 'admin123') {
+        // Usuário administrador
+        window.location.href = 'http://localhost:8080/adminPage';
+      } else {
+        // Usuário normal
+        window.location.href = 'http://localhost:8080/';
+      }
+    });
+  </script>  
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>

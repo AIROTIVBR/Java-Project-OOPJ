@@ -1,0 +1,22 @@
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.navbar-brand:hover {
+  color: white !important;
+}
+
+.cor-navbar {
+  background-color: #5cb670;
+}
+
+.tabela {
+  max-width: 400px; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+}
