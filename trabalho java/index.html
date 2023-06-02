@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="styleADD.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="icon" type="image/png" href="./20230503_082024_0000-removebg-preview (1).png" />
+    <title>SAN</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+  <body class="bg-dark">
+    <nav class="navbar navbar-expand-md cor-navbar">
+      <div class="container-fluid p-0">
+        <a class="navbar-brand" href="#">
+          <h1 class="m-0">
+            <img
+              class="d-block ms-4"
+              src="./20230503_082024_0000-removebg-preview (1).png"
+              alt="Lodo do site SAN"
+              width="44px"
+              height="44px"
+            />
+          </h1>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">
+            <span class="material-symbols-outlined"> menu </span>
+          </span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav container-start">
+          <li class="nav-item">
+            <a
+              class="nav-link fs-5"
+              href="http://127.0.0.1:5501/index.html"
+              >Perfil</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link fs-5"
+              href="http://127.0.0.1:5501/dietas.html"
+              >Dieta</a
+            >
+          <li class="nav-item">
+            <a class="nav-link fs-5" 
+            href="http://127.0.0.1:5501/evolucao.html">Evolução</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <div class="card container card-bg my-4">
+      <div class="card-body">
+        <h5 class="fs-3 font-color">Perfil</h5>
+        </h5>
+        <form>
+          <div class="my-4">
+            <label for="nome-paciente" class="fs-5 font-color form-label"
+              >Nome do paciente</label
+            >
+            <input
+              type="text"
+              class="form-control rounded-input custom-background"disabled
+            />
+          </div>
+
+          <div class="my-4">
+            <label for="email-paciente" class="fs-5 font-color form-label"
+              >Email do paciente</label
+            >
+            <input
+              type="email"
+              class="form-control rounded-input custom-background"disabled
+              id="EmailPaciente"
+            />
+          </div>
+
+          <div class="my-4">
+            <label for="objetivo-paciente" class="fs-5 font-color form-label"
+              >Objetivo do paciente</label
+            >
+            <input
+              type="text"
+              class="form-control rounded-input custom-background"disabled
+            />
+          </div>
+
+          <div class="row g-3 my-4">
+            <label for="massa-gorda-paciente" class="fs-5 font-color form-label"
+              >Informações do paciente</label
+            >
+            <div class="col-sm-4">
+              <label for="Idade">Idade</label>
+              <input
+                type="text"
+                class="form-control rounded-input custom-background"disabled
+              />
+            </div>
+            <div class="col-sm-4">
+              <label for="Peso">Peso</label>
+              <input
+                type="text"
+                class="form-control rounded-input custom-background"disabled
+              />
+            </div>
+            <div class="col-sm-4">
+              <label for="Altura">Altura</label>
+              <input
+                type="text"
+                class="form-control rounded-input custom-background"disabled
+              />
+            </div>
+          </div>
+          <div class="my-4">
+            <label for="exampleInputEmail1" class="fs-5 font-color form-label"
+              >Alergias do paciente</label
+            >
+            <input
+              type="text"
+              class="form-control rounded-input custom-background"disabled
+            />
+          </div>
+
+          <div class="my-4">
+            <label for="doenças-paciente" class="fs-5 font-color form-label"
+              >Doenças do paciente</label
+            >
+            <input
+              type="text"
+              class="form-control rounded-input custom-background"disabled
+            />
+          </div>
+
+          <div class="my-4">
+            <label
+              for="recordatorio-paciente"
+              class="fs-5 font-color form-label"
+              >Recordatório alimentar do paciente</label
+            >
+            <input
+              type="text"
+              class="form-control rounded-input custom-background"disabled
+            />
+          </div>
+          <div class="row g-3">
+            <h5 class="fs-3 font-color">Informações de bioimpedância</h5>
+            <label
+              for="massa-muscular-paciente"
+              class="fs-5 font-color form-label"
+              >Massa muscular do paciente</label
+            >
+            <div class="container">
+              <div class="row">
+               <div class="my-3 col">
+                    <label for="total1">Total</label>
+                    <input 
+                      type="text" 
+                      name=""class="form-control rounded-input custom-background"disabled>
+                </div>
+                <div class="my-3 col">
+                  <label for="braçodireito1">Braço direito</label>
+                  <input 
+                    type="text" 
+                    name=""class="form-control rounded-input custom-background"disabled>
+                </div>
+              </div>
+              <div class="row">
+                <div class="my-3 col">
+                     <label for="braçoesquerdo1">Braço esquerdo</label>
+                     <input 
+                       type="text" 
+                       name=""class="form-control rounded-input custom-background"disabled>
+                 </div>
+                 <div class="my-3 col">
+                   <label for="pernadireita1">Perna direita</label>
+                   <input 
+                     type="text" 
+                     name=""class="form-control rounded-input custom-background"disabled>
+                 </div>
+               </div>
+
+               <div class="row">
+                <div class="my-3 col">
+                     <label for="braçoesquerdo1">Perna esquerda</label>
+                     <input 
+                       type="text" 
+                       name=""class="form-control rounded-input custom-background"disabled>
+                 </div>
+                 <div class="my-3 col">
+                   <label for="Tronco1">Tronco</label>
+                   <input 
+                     type="text" 
+                     name=""class="form-control rounded-input custom-background"disabled>
+                 </div>
+               </div>
+              </div>
+              <div class="my-3 col">
+                <label for="condicionalfisico">Condicional físico</label>
+                <input 
+                  type="text" 
+                  name=""class="form-control rounded-input custom-background"disabled>
+              </div>
+            </div>
+
+          <div class="row g-3 my-4">
+            <label for="massa-gorda-paciente" class="fs-5 font-color form-label"
+              >Massa gorda do paciente</label
+            >
+            <div class="container">
+              <div class="row">
+               <div class="my-3 col">
+                    <label for="total1">Total</label>
+                    <input 
+                      type="text" 
+                      name=""class="form-control rounded-input custom-background"disabled>
+                </div>
+                <div class="my-3 col">
+                  <label for="braçodireito1">Braço direito</label>
+                  <input 
+                    type="text" 
+                    name=""class="form-control rounded-input custom-background"disabled>
+                </div>
+              </div>
+              <div class="row">
+                <div class="my-3 col">
+                     <label for="braçoesquerdo1">Braço esquerdo</label>
+                     <input 
+                       type="text" 
+                       name=""class="form-control rounded-input custom-background"disabled>
+                 </div>
+                 <div class="my-3 col">
+                   <label for="pernadireita1">Perna direita</label>
+                   <input 
+                     type="text" 
+                     name=""class="form-control rounded-input custom-background"disabled>
+                 </div>
+               </div>
+
+               <div class="row">
+                <div class="my-3 col">
+                     <label for="braçoesquerdo1">Perna esquerda</label>
+                     <input 
+                       type="text" 
+                       name=""class="form-control rounded-input custom-background"disabled>
+                 </div>
+                 <div class="my-3 col">
+                   <label for="Tronco1">Tronco</label>
+                   <input 
+                     type="text" 
+                     name=""class="form-control rounded-input custom-background"disabled>
+                 </div>
+               </div>
+              </div>
+
+          <div class="my-4">
+            <label
+              for="idade-metabolica-paciente"
+              class="fs-5 font-color form-label"
+              >Idade metabólica do paciente</label
+            >
+            <input
+              type="text"
+              class="form-control rounded-input custom-background"disabled
+            />
+          </div>
+
+          <div class="my-4">
+            <label
+              for="porcentagem-liquido-paciente"
+              class="fs-5 font-color form-label"
+              >Porcentagem de líquido do paciente</label
+            >
+            <input
+              type="text"
+              class="form-control rounded-input custom-background"disabled
+            />
+          </div>
+
+          <div class="my-4">
+            <label
+              for="gordura-visceral-paciente"
+              class="fs-5 font-color form-label"
+              >Gordura visceral do paciente</label
+            >
+            <input
+              type="text"
+              class="form-control rounded-input custom-background"disabled
+            />
+          </div>
+
+          <div class="my-4">
+            <label for="massa-ossea-paciente" class="fs-5 font-color form-label"
+              >Massa óssea do paciente</label
+            >
+            <input
+              type="text"
+              class="form-control rounded-input custom-background"disabled
+            />
+          </div>
+
+          <div class="my-4">
+            <label for="dci-paciente" class="fs-5 font-color form-label"
+              >DCI do paciente</label
+            >
+            <input
+              type="text"
+              class="form-control rounded-input custom-background"disabled
+            />
+          </div>
+      </div>
+
+    </div>
+    <div class="row g-3 my-4">
+      <div class="col-md-6">
+        <label for="intestino preso" class="fs-5 font-color form-label"
+          >O paciente tem intestino preso</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="Diarreia" class="fs-5 font-color form-label"
+          >O paciente tem diarreia</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="Flatulência" class="fs-5 font-color form-label"
+          >O paciente tem flatulência (gases excessivos)</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+
+      <div class="col-md-6">
+        <label for="Eructação" class="fs-5 font-color form-label"
+          >O paciente tem eructação (arrotar)</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="Digestão lenta" class="fs-5 font-color form-label"
+          >O paciente tem digestão lenta</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="Azia" class="fs-5 font-color form-label"
+          >O paciente tem azia (queimação)</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="Náuseas e vômitos" class="fs-5 font-color form-label"
+          >O paciente tem náuseas e vômitos</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="Hemorroidas" class="fs-5 font-color form-label"
+          >O paciente tem hemorroidas</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="Aftas" class="fs-5 font-color form-label"
+          >O paciente tem aftas</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label
+          for="Sangramento das gengivas"
+          class="fs-5 font-color form-label"
+          >O paciente tem sangramento das gengivas</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label
+          for="Alterações na língua"
+          class="fs-5 font-color form-label"
+          >O paciente tem alterações na língua</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label
+          for="Mau hálito / boca amarga / boca seca"
+          class="fs-5 font-color form-label"
+          >O paciente tem mau hálito / boca amarga / boca seca</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label
+          for="Rachaduras nos lábios/ cantos da boca,"
+          class="fs-5 font-color form-label"
+          >O paciente tem rachaduras nos lábios/ cantos da boca,</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label
+          for="Alterações de apetite"
+          class="fs-5 font-color form-label"
+          >O paciente tem alterações de apetite</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="Perda do paladar" class="fs-5 font-color form-label"
+          >O paciente tem perda do paladar</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="Alterações de peso" class="fs-5 font-color form-label"
+          >O paciente tem alterações de peso</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="Flacidez muscular" class="fs-5 font-color form-label"
+          >O paciente tem flacidez muscular</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label
+          for="Infecções frequentes"
+          class="fs-5 font-color form-label"
+          >O paciente tem infecções frequentes</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="Dores de cabeça" class="fs-5 font-color form-label"
+          >O paciente tem dores de cabeça</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label
+          for="Diabetes ou pré-diabetes"
+          class="fs-5 font-color form-label"
+          >O paciente tem diabetes ou pré-diabetes</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="Hipoglicemia" class="fs-5 font-color form-label"
+          >O paciente tem hipoglicemia</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label
+          for="Taxa de triglicérides alterada"
+          class="fs-5 font-color form-label"
+          >O paciente tem taxa de triglicérides alterada</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label
+          for="Taxa de colesterol alterada"
+          class="fs-5 font-color form-label"
+          >O paciente tem taxa de colesterol alterada</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label
+          for="Tonturas/ falta de equilíbrio"
+          class="fs-5 font-color form-label"
+          >O paciente tem tonturas/ falta de equilíbrio</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="Fraqueza / desmaio" class="fs-5 font-color form-label"
+          >O paciente tem fraqueza / desmaio</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="Espinhas/seborreia" class="fs-5 font-color form-label"
+          >O paciente tem espinhas/seborreia</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label
+          for="Micose/ eczema/ psoríase/ caspa"
+          class="fs-5 font-color form-label"
+          >O paciente tem micose/ eczema/ psoríase/ caspa</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="Anemia" class="fs-5 font-color form-label"
+          >O paciente tem anemia</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="Queda de cabelos" class="fs-5 font-color form-label"
+          >O paciente tem queda de cabelos</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label
+          for="Unhas frágeis /quebradiças/ escamação"
+          class="fs-5 font-color form-label"
+          >O paciente tem unhas frágeis /quebradiças/ escamação</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="Pele ressecada" class="fs-5 font-color form-label"
+          >O paciente tem pele ressecada</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label
+          for="Alterações nas unhas (estrias/ manchas)"
+          class="fs-5 font-color form-label"
+          >O paciente tem alterações nas unhas (estrias/ manchas)</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label
+          for="Osteoporose / osteopenia"
+          class="fs-5 font-color form-label"
+          >O paciente tem osteoporose / osteopenia</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label
+          for="Dores musculares / articulares,"
+          class="fs-5 font-color form-label"
+          >O paciente tem dores musculares / articulares,</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label
+          for="Amortecimento braços e pernas"
+          class="fs-5 font-color form-label"
+          >O paciente tem amortecimento braços e pernas</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label
+          for="Dificuldade de cicatrização"
+          class="fs-5 font-color form-label"
+          >O paciente tem dificuldade de cicatrização</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="Câimbras" class="fs-5 font-color form-label"
+          >O paciente tem câimbras</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label
+          for="Alt. no ritmo cardiorrespiratório"
+          class="fs-5 font-color form-label"
+          >O paciente tem alt. no ritmo cardiorrespiratório</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label
+          for="Manchas arroxeadas na pele"
+          class="fs-5 font-color form-label"
+          >O paciente tem manchas arroxeadas na pele</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="Pressão alta" class="fs-5 font-color form-label"
+          >O paciente tem pressão alta</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="Pressão baixa" class="fs-5 font-color form-label"
+          >O paciente tem pressão baixa</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="Inchaço" class="fs-5 font-color form-label"
+          >O paciente tem inchaço</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label
+          for="Transpiração excessiva"
+          class="fs-5 font-color form-label"
+          >O paciente tem transpiração excessiva</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label
+          for="Tensão pré-menstrual"
+          class="fs-5 font-color form-label"
+          >O paciente tensão pré-menstrual</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label
+          for="Alterações de fluxo menstrual"
+          class="fs-5 font-color form-label"
+          >O paciente tem alterações de fluxo menstrual</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label
+          for="Compulsividade ansiedade / apreensão"
+          class="fs-5 font-color form-label"
+          >O paciente tem compulsividade ansiedade / apreensão</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="Irritabilidade" class="fs-5 font-color form-label"
+          >O paciente tem irritabilidade</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="Nervosismo" class="fs-5 font-color form-label"
+          >O paciente tem nervosismo</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label
+          for="Hiperatividade física/ mental"
+          class="fs-5 font-color form-label"
+          >O paciente tem hiperatividade física/ mental</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label
+          for="Menor capacidade de concentração"
+          class="fs-5 font-color form-label"
+          >O paciente tem menor capacidade de concentração</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label
+          for="Diminuição de memória"
+          class="fs-5 font-color form-label"
+          >O paciente tem diminuição de memória</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="Fadiga" class="fs-5 font-color form-label"
+          >O paciente tem fadiga</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="Sonolência" class="fs-5 font-color form-label"
+          >O paciente tem sonolência</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="Insônia" class="fs-5 font-color form-label"
+          >O paciente tem insônia</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label
+          for="Alterações na audição / ouvido"
+          class="fs-5 font-color form-label"
+          >O paciente tem alterações na audição / ouvido</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label
+          for="Alterações na visão / olhos"
+          class="fs-5 font-color form-label"
+          >O paciente tem alterações na visão / olhos</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="Alteração de humor" class="fs-5 font-color form-label"
+          >O paciente tem alteração de humor</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+
+      <div class="col-md-6">
+        <label for="Depressão" class="fs-5 font-color form-label"
+          >O paciente tem depressão</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="Síndrome do pânico" class="fs-5 font-color form-label"
+          >O paciente tem síndrome do pânico</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="Micro vasos" class="fs-5 font-color form-label"
+          >O paciente tem micro vasos</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="Celulite" class="fs-5 font-color form-label"
+          >O paciente tem celulite</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label
+          for="Ardência / prurido (vaginal e/ ou anal)"
+          class="fs-5 font-color form-label"
+          >O paciente tem ardência / prurido (vaginal e/ ou anal)</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label
+          for="Bruxismo / tensionamento"
+          class="fs-5 font-color form-label"
+          >O paciente tem bruxismo / tensionamento</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="Fumante" class="fs-5 font-color form-label"
+          >O paciente é fumante</label
+        >
+        <input
+          type="text"
+          class="form-control rounded-input custom-background"disabled
+        />
+      </div>
+    </div>
+  </form>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.navbar-brand:hover {
+  color: white !important;
+}
+
+.cor-navbar {
+  background: linear-gradient(to right, #123d12, #3db83d, #a9f859);
+}
+
+.card-bg {
+  background-color: #ffffff;
+  border-radius: 40px;
+}
+.font-color {
+  color: rgb(0, 0, 0);
+}
+
+.rounded-input {
+  border-radius: 20px;
+}
+.custom-background {
+  background-color: rgb(214, 214, 214);
+}
+
+.small-input {
+  width: 250px;
+  height: 50px;
+}
+</style>
