@@ -16,103 +16,202 @@ public class Cliente {
 
 	@Column(name = "id_pac")
 	private Integer idPac;
+	@Column(name = "nome")
 	private String nome;
+	@Column(name = "email")
 	private String email;
+	@Column(name = "senha")
 	private String senha;
+	@Column(name = "sexo")
 	private String sexo;
+	@Column(name = "objetivo")
 	private String objetivo;
+	@Column(name = "altura")
 	private double altura;
+	@Column(name = "peso")
 	private double peso;
+	@Column(name = "idade")
 	private Integer idade;
+	@Column(name = "alergias")
 	private String alergias;
+	@Column(name = "doenças")
 	private String doencas;
+	@Column(name = "sangue")
 	private String sangue;
+	@Column(name = "doenças_familia")
 	private String doencas_familia;
+	@Column(name = "atividade_física")
 	private String atividade_fisica;
+	@Column(name = "medicações")
 	private String medicacoes;
+	@Column(name = "liquido")
 	private String liquido;
+	@Column(name = "recordatório")
 	private String recordatorio;
+	@Column(name = "massa_muscular_total")
 	private double massa_muscular_total;
+	@Column(name = "massa_muscular_bd")
 	private double massa_muscular_bd;
+	@Column(name = "massa_muscular_be")
 	private double massa_muscular_be;
+	@Column(name = "massa_muscular_pd")
 	private double massa_muscular_pd;
+	@Column(name = "massa_muscular_pe")
 	private double massa_muscular_pe;
+	@Column(name = "massa_muscular_tronco")
 	private double massa_muscular_tronco;
+	@Column(name = "massa_muscular_condo")
 	private double massa_muscular_cond;
+
+	@Column(name = "massa_gorda_total")
 	private double massa_gorda_total;
+	@Column(name = "massa_gorda_bd")
 	private double massa_gorda_bd;
+	@Column(name = "massa_gorda_be")
 	private double massa_gorda_be;
+	@Column(name = "massa_gorda_pd")
 	private double massa_gorda_pd;
+	@Column(name = "massa_gorda_pe")
 	private double massa_gorda_pe;
+	@Column(name = "massa_gorda_tronco")
 	private double massa_gorda_tronco;
+	@Column(name = "idade_meta")
 	private Integer idade_meta;
+	@Column(name = "porcen_liq")
 	private double porcen_liq;
+	@Column(name = "gordura_visc")
 	private Integer gordura_visc;
+	@Column(name = "massa_osso")
 	private Integer massa_osso;
+	@Column(name = "DCI")
 	private Integer DCI;
+	@Column(name = "intestino_preso")
 	private String intestino_preso;
+	@Column(name = "diarreia")
 	private String diarreia;
+	@Column(name = "flatulencia")
 	private String flatulencia;
+	@Column(name = "eructacao")
 	private String eructacao;
-	private String disgestao_lenta;
+	@Column(name = "digestao_lenta")
+	private String digestao_lenta;
+	@Column(name = "azia")
 	private String azia;
+	@Column(name = "nausea_vomitos")
 	private String nausea_vomitos;
+	@Column(name = "hemorroida")
 	private String hemorroida;
+	@Column(name = "afta")
 	private String afta;
+	@Column(name = "sangramento_geng")
 	private String sangramento_geng;
+	@Column(name = "alter_lingua")
 	private String alter_lingua;
+	@Column(name = "mauHalito_bocaAmarga_bocaSeca")
 	private String mauHalito_bocaAmarga_bocaSeca;
+	@Column(name = "labio_rach")
 	private String labio_rach;
+	@Column(name = "alt_apetite")
 	private String alt_apetite;
+	@Column(name = "perda_paladar")
 	private String perda_paladar;
+	@Column(name = "alt_peso")
 	private String alt_peso;
+	@Column(name = "flacidez_musc")
 	private String flacidez_musc;
+	@Column(name = "infec_freq")
 	private String infec_freq;
+	@Column(name = "dor_cabeca")
 	private String dor_cabeca;
+	@Column(name = "diabetes")
 	private String diabetes;
+	@Column(name = "hipogli")
 	private String hipogli;
+	@Column(name = "trigli_alt")
 	private String trigli_alt;
+	@Column(name = "colest_alt")
 	private String colest_alt;
+	@Column(name = "tontura")
 	private String tontura;
+	@Column(name = "fraqueza")
 	private String fraqueza;
+	@Column(name = "espinhas")
 	private String espinhas;
+	@Column(name = "mepc")
 	private String mepc;
+	@Column(name = "anemia")
 	private String anemia;
+	@Column(name = "cabelo_frag")
 	private String cabelo_frag;
+	@Column(name = "pele_ress")
 	private String pele_ress;
+	@Column(name = "alt_unha")
 	private String alt_unha;
+	@Column(name = "osteos")
 	private String osteos;
+	@Column(name = "dor_musc_art")
 	private String dor_musc_art;
+	@Column(name = "amort_b_p")
 	private String amort_b_p;
+	@Column(name = "dif_cicat")
 	private String dif_cicat;
+	@Column(name = "caimbra")
 	private String caimbra;
+	@Column(name = "alt_cardio")
 	private String alt_cardio;
+	@Column(name = "manchas_rox")
 	private String manchas_rox;
+	@Column(name = "press_alta")
 	private String press_alta;
+	@Column(name = "press_baix")
 	private String press_baix;
+	@Column(name = "inchaco")
 	private String inchaco;
-	private String trans_exec;
+	@Column(name = "transp_exc")
+	private String transp_exc;
+	@Column(name = "TPM")
 	private String TPM;
+	@Column(name = "alt_menst")
 	private String alt_menst;
+	@Column(name = "ansiedade")
 	private String ansiedade;
+	@Column(name = "irritacao")
 	private String irritacao;
+	@Column(name = "nervosismo")
 	private String  nervosismo;
+	@Column(name = "heperatv")
 	private String hiperatv;
+	@Column(name = "dif_atencao")
 	private String dif_atencao;
+	@Column(name = "dif_memoria")
 	private String dif_memoria;
+	@Column(name = "fadiga")
 	private String fadiga;
+	@Column(name = "sonolencia")
 	private String sonolencia;
+	@Column(name = "insonia")
 	private String insonia;
+	@Column(name = "alt_ouvido")
 	private String alt_ouvido;
+	@Column(name = "alt_olhos")
 	private String alt_olhos;
+	@Column(name = "alt_humor")
 	private String alt_humor;
+	@Column(name = "depressao")
 	private String depressao;
+	@Column(name = "sind_panioo")
 	private String sind_panico;
+	@Column(name = "micro_vasos")
 	private String micro_vasos;
+	@Column(name = "celulite")
 	private String celulite;
+	@Column(name = "ardencia_vag_anal")
 	private String ardencia_vag_anal;
+	@Column(name = "bruxismo")
 	private String bruxismo;
+	@Column(name = "fumante")
 	private String fumante;
+	@Column(name = "id_pro")
 	private String id_pro;
 
     public Cliente(){
@@ -198,7 +297,7 @@ public class Cliente {
 
 	public Integer getIdade_meta(){return idade_meta;}
 
-	public double getPorcen_liq(){return idade_meta;}
+	public double getPorcen_liq(){return porcen_liq;}
 
 	public Integer getGordura_visc(){return gordura_visc;}
 
@@ -216,7 +315,7 @@ public class Cliente {
 
 	public String getAzia(){return azia;}
 
-	public String getDisgestao_lenta(){return disgestao_lenta;}
+	public String getDisgestao_lenta(){return digestao_lenta;}
 
 	public String getNausea_vomitos(){return nausea_vomitos;}
 
@@ -288,7 +387,7 @@ public class Cliente {
 
 	public String getInchaco(){return inchaco;}
 
-	public String getTrans_exec(){return trans_exec;}
+	public String getTransp_exc(){return transp_exc;}
 
 	public String getTPM(){return TPM;}
 
@@ -464,7 +563,7 @@ public class Cliente {
 		this.eructacao = eructacao;
 	}
 
-	public void setDisgestao_lenta(String digestao_lenta) {this.disgestao_lenta = digestao_lenta;}
+	public void setDisgestao_lenta(String digestao_lenta) {this.digestao_lenta = digestao_lenta;}
 
 	public void setAzia(String azia) {
 		this.azia = azia;
@@ -600,9 +699,7 @@ public class Cliente {
 		this.inchaco = inchaco;
 	}
 
-	public void setTrans_exec(String transExec) {
-		this.trans_exec = transExec;
-	}
+	public void setTransp_exc(String transp_exc) {this.transp_exc = transp_exc;}
 
 	public void setTPM(String TPM) {this.TPM = TPM;}
 
