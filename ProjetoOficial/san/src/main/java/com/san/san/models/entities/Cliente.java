@@ -27,13 +27,22 @@ public class Cliente {
 	@Column(name = "objetivo")
 	private String objetivo;
 	@Column(name = "altura")
+<<<<<<< HEAD
 	private Double altura;
+=======
+	private double altura;
+>>>>>>> 393911abb38cf7c2cadad4a72687319310b79ada
 	@Column(name = "peso")
 	private double peso;
 	@Column(name = "idade")
 	private Integer idade;
+<<<<<<< HEAD
 	@Column(name = "alergia")
 	private String alergia;
+=======
+	@Column(name = "alergias")
+	private String alergias;
+>>>>>>> 393911abb38cf7c2cadad4a72687319310b79ada
 	@Column(name = "doenças")
 	private String doencas;
 	@Column(name = "sangue")
@@ -49,6 +58,7 @@ public class Cliente {
 	@Column(name = "recordatório")
 	private String recordatorio;
 	@Column(name = "massa_muscular_total")
+<<<<<<< HEAD
 	private Double massa_muscular_total;
 	@Column(name = "massa_muscular_bd")
 	private Double massa_muscular_bd;
@@ -78,6 +88,38 @@ public class Cliente {
 	private Integer idade_meta;
 	@Column(name = "porcen_liq")
 	private Double porcen_liq;
+=======
+	private double massa_muscular_total;
+	@Column(name = "massa_muscular_bd")
+	private double massa_muscular_bd;
+	@Column(name = "massa_muscular_be")
+	private double massa_muscular_be;
+	@Column(name = "massa_muscular_pd")
+	private double massa_muscular_pd;
+	@Column(name = "massa_muscular_pe")
+	private double massa_muscular_pe;
+	@Column(name = "massa_muscular_tronco")
+	private double massa_muscular_tronco;
+	@Column(name = "massa_muscular_condo")
+	private double massa_muscular_cond;
+
+	@Column(name = "massa_gorda_total")
+	private double massa_gorda_total;
+	@Column(name = "massa_gorda_bd")
+	private double massa_gorda_bd;
+	@Column(name = "massa_gorda_be")
+	private double massa_gorda_be;
+	@Column(name = "massa_gorda_pd")
+	private double massa_gorda_pd;
+	@Column(name = "massa_gorda_pe")
+	private double massa_gorda_pe;
+	@Column(name = "massa_gorda_tronco")
+	private double massa_gorda_tronco;
+	@Column(name = "idade_meta")
+	private Integer idade_meta;
+	@Column(name = "porcen_liq")
+	private double porcen_liq;
+>>>>>>> 393911abb38cf7c2cadad4a72687319310b79ada
 	@Column(name = "gordura_visc")
 	private Integer gordura_visc;
 	@Column(name = "massa_osso")
@@ -106,6 +148,11 @@ public class Cliente {
 	private String sangramento_geng;
 	@Column(name = "alter_lingua")
 	private String alter_lingua;
+<<<<<<< HEAD
+=======
+	@Column(name = "mauHalito_bocaAmarga_bocaSeca")
+	private String mauHalito_bocaAmarga_bocaSeca;
+>>>>>>> 393911abb38cf7c2cadad4a72687319310b79ada
 	@Column(name = "labio_rach")
 	private String labio_rach;
 	@Column(name = "alt_apetite")
@@ -176,7 +223,11 @@ public class Cliente {
 	private String irritacao;
 	@Column(name = "nervosismo")
 	private String  nervosismo;
+<<<<<<< HEAD
 	@Column(name = "hiperatv")
+=======
+	@Column(name = "heperatv")
+>>>>>>> 393911abb38cf7c2cadad4a72687319310b79ada
 	private String hiperatv;
 	@Column(name = "dif_atencao")
 	private String dif_atencao;
@@ -188,7 +239,11 @@ public class Cliente {
 	private String sonolencia;
 	@Column(name = "insonia")
 	private String insonia;
+<<<<<<< HEAD
 	@Column(name = "alt_ouvidos")
+=======
+	@Column(name = "alt_ouvido")
+>>>>>>> 393911abb38cf7c2cadad4a72687319310b79ada
 	private String alt_ouvido;
 	@Column(name = "alt_olhos")
 	private String alt_olhos;
@@ -196,7 +251,11 @@ public class Cliente {
 	private String alt_humor;
 	@Column(name = "depressao")
 	private String depressao;
+<<<<<<< HEAD
 	@Column(name = "sind_panico")
+=======
+	@Column(name = "sind_panioo")
+>>>>>>> 393911abb38cf7c2cadad4a72687319310b79ada
 	private String sind_panico;
 	@Column(name = "micro_vasos")
 	private String micro_vasos;
@@ -215,6 +274,15 @@ public class Cliente {
 
     }
 	///////////////////
+<<<<<<< HEAD
+=======
+    public Cliente(String nome, String sexo, double peso) {
+		super();
+		this.nome = nome;
+		this.sexo = sexo;
+		this.peso = peso;
+	}
+>>>>>>> 393911abb38cf7c2cadad4a72687319310b79ada
 	/////////////////// Getters ///////////////////
 	public Integer getIdPac() {
 		return idPac;
@@ -244,7 +312,11 @@ public class Cliente {
 
 	public Integer getIdade(){return idade;}
 
+<<<<<<< HEAD
 	public String getAlergias(){return alergia;}
+=======
+	public String getAlergias(){return alergias;}
+>>>>>>> 393911abb38cf7c2cadad4a72687319310b79ada
 
 	public String getDoencas(){return doencas;}
 
@@ -318,6 +390,11 @@ public class Cliente {
 
 	public String getAlter_lingua(){return alter_lingua;}
 
+<<<<<<< HEAD
+=======
+	public String getMauHalito_bocaAmarga_bocaSeca(){return mauHalito_bocaAmarga_bocaSeca;}
+
+>>>>>>> 393911abb38cf7c2cadad4a72687319310b79ada
 	public String getLabio_rach(){return labio_rach;}
 
 	public String getAlt_apetite(){return alt_apetite;}
@@ -446,7 +523,11 @@ public class Cliente {
 
 	public void setObjetivo(String objetivo) {this.objetivo = objetivo ;}
 
+<<<<<<< HEAD
 	public void setAltura(Double altura) {
+=======
+	public void setAltura(double altura) {
+>>>>>>> 393911abb38cf7c2cadad4a72687319310b79ada
 		this.altura = altura;
 	}
 
@@ -456,7 +537,11 @@ public class Cliente {
 
 	public void setIdade(Integer idade) {this.idade = idade;}
 
+<<<<<<< HEAD
 	public void setAlergias(String alergias) {this.alergia = alergias;}
+=======
+	public void setAlergias(String alergias) {this.alergias = alergias;}
+>>>>>>> 393911abb38cf7c2cadad4a72687319310b79ada
 
 	public void setDoencas(String doencas) {
 		this.doencas = doencas;
@@ -484,6 +569,7 @@ public class Cliente {
 		this.recordatorio = recordatorio;
 	}
 
+<<<<<<< HEAD
 	public void setMassa_muscular_total(Double massa_muscular_total) {
 		this.massa_muscular_total = massa_muscular_total;}
 
@@ -522,12 +608,55 @@ public class Cliente {
 	public void setMassa_gorda_pe(Double massa_gorda_pe) {this.massa_gorda_pe = massa_gorda_pe;}
 
 	public void setMassa_gorda_tronco(Double massa_gorda_tronco) {
+=======
+	public void setMassa_muscular_total(double massa_muscular_total) {this.massa_muscular_total = massa_muscular_total;}
+
+	public void setMassa_muscular_bd(double massa_muscular_bd) {
+		this.massa_muscular_bd = massa_muscular_bd;
+	}
+
+	public void setMassa_muscular_be(double massa_muscular_be) {
+		this.massa_muscular_be = massa_muscular_be;
+	}
+
+	public void setMassa_muscular_pd(double massa_muscular_pd) {this.massa_muscular_pd = massa_muscular_pd;}
+
+	public void setMassa_muscular_pe(double massa_muscular_pe) {
+		this.massa_muscular_pe = massa_muscular_pe;
+	}
+
+	public void setMassa_muscular_tronco(double massa_muscular_tronco) {this.massa_muscular_tronco = massa_muscular_tronco;}
+
+	public void setMassa_muscular_cond(double massa_muscular_cond) {this.massa_muscular_cond = massa_muscular_cond;}
+
+	public void setMassa_gorda_total(double massa_gorda_total) {
+		this.massa_gorda_total = massa_gorda_total;
+	}
+
+	public void setMassa_gorda_bd(double massa_gorda_bd) {
+		this.massa_gorda_bd = massa_gorda_bd;
+	}
+
+	public void setMassa_gorda_be(double massa_muscular_be) {
+		this.massa_gorda_be = massa_muscular_be;
+	}
+
+	public void setMassa_gorda_pd(double massa_gorda_pd) {this.massa_gorda_pd= massa_gorda_pd;}
+
+	public void setMassa_gorda_pe(double massa_gorda_pe) {this.massa_gorda_pe = massa_gorda_pe;}
+
+	public void setMassa_gorda_tronco(double massa_gorda_tronco) {
+>>>>>>> 393911abb38cf7c2cadad4a72687319310b79ada
 		this.massa_gorda_tronco = massa_gorda_tronco;
 	}
 
 	public void setIdade_meta(Integer idade_meta) {this.idade_meta = idade_meta;}
 
+<<<<<<< HEAD
 	public void setPorcen_liq(Double porcen_liq) {this.porcen_liq = porcen_liq;}
+=======
+	public void setPorcen_liq(double porcen_liq) {this.porcen_liq = porcen_liq;}
+>>>>>>> 393911abb38cf7c2cadad4a72687319310b79ada
 
 	public void setGordura_visc(Integer gordura_visc) {this.gordura_visc = gordura_visc;}
 
@@ -577,6 +706,11 @@ public class Cliente {
 		this.alter_lingua = alter_lingua;
 	}
 
+<<<<<<< HEAD
+=======
+	public void setMauHalito_bocaAmarga_bocaSeca(String mauHalito_bocaAmarga_bocaSecabocaAmargaBocaSeca) {this.mauHalito_bocaAmarga_bocaSeca = mauHalito_bocaAmarga_bocaSecabocaAmargaBocaSeca;}
+
+>>>>>>> 393911abb38cf7c2cadad4a72687319310b79ada
 	public void setLabio_rach(String labio_rach) {this.labio_rach = labio_rach;}
 
 	public void setAlt_apetite(String alt_apetite) {
