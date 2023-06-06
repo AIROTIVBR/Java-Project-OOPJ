@@ -11,12 +11,17 @@
 }
 
 .cor-navbar {
-  background-color: #5cb670;
+  background: linear-gradient(to right, #123d12, #3db83d, #a9f859);
 }
 
-.tabela {
-  max-width: 400px; 
-  white-space: nowrap; 
-  overflow: hidden; 
-  text-overflow: ellipsis; 
+.card-bg {
+  background-color: white;
+  border-radius: 40px;
+}
+
+.font-color {
+  color: white;
+}
+.font-color-table {
+  color: black;
 }

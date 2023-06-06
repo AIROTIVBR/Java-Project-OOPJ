@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="\css\styleADD.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="icon" type="image/png" href="\img\Logo-SAN.png" />
+    <title>SAN</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+  <body class="bg-dark">
+    <nav class="navbar navbar-expand-md cor-navbar">
+      <div class="container-fluid p-0">
+        <a class="navbar-brand" href="#">
+          <h1 class="m-0">
+            <img
+              class="d-block ms-4"
+              src="\img\Logo-SAN.png"
+              alt="Lodo do site SAN"
+              width="44px"
+              height="44px"
+            />
+          </h1>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">
+            <span class="material-symbols-outlined"> menu </span>
+          </span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav container-start">
+          <li class="nav-item">
+            <a
+              class="nav-link fs-5"
+              th:href="@{/perfil/{id}(id=${cliente.idPac})}"
+              >Perfil</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link fs-5"
+              th:href="@{/dieta/{id}(id=${cliente.idPac})}"
+              >Dieta</a
+            >
+          <li class="nav-item">
+            <a class="nav-link fs-5" 
+            th:href="@{/evolucao/{id}(id=${cliente.idPac})}">Evolução</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="card container card-bg my-4">
+      <div class="card-body">
+
+
+        <div class="container-md">
+          <div class="row">
+              <div class="col-md-2 d-flex justify-content-center">
+                  <div class="list-group" id="lista-botoes">
+                      <button type="button" class="list-group-item list-group-item-action" data-target="texto1" onclick="exibirTexto(this)">Botão 1</button>
+                  </div>
+              </div>
+              <div class="col-md-6 offset-md-4">
+                  <div th:each="evolucao : ${evolucoes}">
+                    <p id="texto1" class="texto-oculto" th:text="${evolucao.evolucao}"></p>
+                  </div>
+                  <p id="texto2" class="texto-oculto">O Flash é o homem mais rápido vivo. Ele é o protetor de Central City e Keystone City, lutando contra o mal usando sua supervelocidade e um senso dedicado de heroísmo. Seu legado, a Família Flash, se estende ao longo da história, aproveitando a enigmática Força de Aceleração para ganhar seus poderes</p>
+                  <p id="texto3" class="texto-oculto">O Super Choque foi criado originalmente pelos fundadores da editora Milestone Comics: Dwayne McDuffie, Denys Cowan, Michael Davis e Derek T. Dingle.Sua estreia ocorreu já em sua primeira HQ solo, lançada em junho de 1993.</p>
+                  <p id="texto4" class="texto-oculto">uma simples frase de teste</p>
+                  <p id="texto5" class="texto-oculto">uma simples frase de teste sem importancia</p>
+              </div>
+          </div>
+      </div>
+      
+
+
+    </div>
+  </div>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous">
+ </script>
+ <script>
+    var textos = ["Texto 1", "Texto 2", "Texto 3", "Texto 4"]; // Array de textos inicial
+
+    function exibirTexto(botao) {
+      var alvo = botao.getAttribute("data-target");
+      var texto = document.getElementById(alvo);
+
+      // Oculta todos os textos
+      var textosElementos = document.querySelectorAll(".col-md-6 p");
+      textosElementos.forEach(function(elemento) {
+        elemento.classList.add("texto-oculto");
+      });
+
+      // Exibe apenas o texto alvo
+      texto.classList.remove("texto-oculto");
+    }
+
+    // Função para adicionar os botões e textos automaticamente
+    function adicionarBotoes() {
+      var lista = document.getElementById("lista-botoes");
+
+      for (var i = 1; i < textos.length; i++) {
+        var novoBotao = document.createElement("button");
+        novoBotao.type = "button";
+        novoBotao.className = "list-group-item list-group-item-action";
+        novoBotao.textContent = "Botão " + (i + 1);
+        novoBotao.setAttribute("data-target", "texto" + (i + 1));
+        novoBotao.onclick = function() { exibirTexto(this); }
+        lista.appendChild(novoBotao);
+
+        var novoTexto = document.createElement("p");
+        novoTexto.id = "texto" + (i + 1);
+        novoTexto.className = "texto-oculto";
+        novoTexto.textContent = textos[i];
+        document.querySelector(".col-md-6").appendChild(novoTexto);
+      }
+    }
+    // Chame a função para adicionar os botões e textos automaticamente
+    window.addEventListener("DOMContentLoaded", function() {
+      adicionarBotoes();
+      
+    });
+  </script>
+</body>
+</html>
+<style>
+.navbar-nav .nav-link {
+color: white;
+}
+
+.navbar-brand {
+color: white;
+}
+
+.navbar-brand:hover {
+color: white !important;
+}
+
+.cor-navbar {
+background: linear-gradient(to right, #123d12, #3db83d, #a9f859);
+}
+
+.card-bg {
+background-color: #ffffff;
+border-radius: 40px;
+}
+.font-color {
+color: rgb(0, 0, 0);
+}
+
+.rounded-input {
+border-radius: 20px;
+}
+.custom-background {
+background-color: rgb(214, 214, 214);
+}
+
+.small-input {
+width: 250px;
+height: 50px;
+}
+.texto-oculto {
+text-align: center;
+display: none;
+ }
+ .list-group-item {
+  color: rgb(0, 0, 0);
+  background-color: #f3f2f7 !important;
+  color: rgb(15, 15, 15) !important;
+  border-radius: 10px; /* Adicionando o valor de raio desejado */
+  padding-left: 20px; /* Ajuste o valor do espaçamento interno conforme necessário */
+}
+.list-group-item:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.list-group-item:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+</style>

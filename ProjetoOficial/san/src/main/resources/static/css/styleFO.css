@@ -1,23 +1,38 @@
 .navbar-nav .nav-link {
-    color: white;
-  }
-  
-  .navbar-brand {
-    color: white;
-  }
-  
-  .navbar-brand:hover {
-    color: white !important;
-  }
-  
-  .cor-navbar {
-    background-color: #5cb670;
-  }
-  
-
-.card-bg{
-    background-color: #5CB670;
+  color: white;
 }
-.font-color{
-    color: white;
+
+.navbar-brand {
+  color: white;
+}
+
+.navbar-brand:hover {
+  color: white !important;
+}
+
+.cor-navbar {
+  background: linear-gradient(to right, #123d12, #3db83d, #a9f859);
+}
+
+.card-bg {
+  background-color: #ffffff;
+  border-radius: 40px;
+}
+.font-color {
+  color: rgb(0, 0, 0);
+}
+
+.rounded-input {
+  border-radius: 20px;
+}
+.custom-background {
+  background-color: rgb(214, 214, 214);
+}
+
+.small-input {
+  width: 350px;
+  height: 40px;
+}
+.bi-pencil-square:hover {
+  color: #3db83d;
 }

@@ -1,0 +1,15 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "Udemy/lib/mysql-connector-j-8.0.32.jar",
+        "Spring/testeex/teste3/.mvn/wrapper/maven-wrapper.jar"
+    ],
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.project.sourcePaths": [
+        "Udemy/src",
+        "Spring/testeex/teste3/src/main/java/testando3spring/teste3",
+        "Spring/testando3/testando3/src/main/java/Testando3/testando3",
+        "ProjetoSAN/demo/src/main/java/san/example/demo"
+    ]
+}

@@ -1,0 +1,79 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "SanApplication",
+            "request": "launch",
+            "mainClass": "com.san.san.SanApplication",
+            "projectName": "san"
+        },
+        {
+            "type": "java",
+            "name": "DozetesteApplication",
+            "request": "launch",
+            "mainClass": "teste12.dozeteste.DozetesteApplication",
+            "projectName": "dozeteste"
+        },
+        {
+            "type": "java",
+            "name": "Testando3Application",
+            "request": "launch",
+            "mainClass": "Testando3Application",
+            "projectName": "Java_24b6655f"
+        },
+        {
+            "type": "java",
+            "name": "Teste3Application",
+            "request": "launch",
+            "mainClass": "com.example.demo.Teste3Application",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Teste3Application",
+            "request": "launch",
+            "mainClass": "Teste3Application",
+            "projectName": "Java_24b6655f"
+        },
+        {
+            "type": "java",
+            "name": "Testando2SpringApplication",
+            "request": "launch",
+            "mainClass": "test3s.com.testando2Spring.Testando2SpringApplication",
+            "projectName": "testando2Spring"
+        },
+        {
+            "type": "java",
+            "name": "TestandoSpringApplication",
+            "request": "launch",
+            "mainClass": "test3s.com.testandoSpring.TestandoSpringApplication",
+            "projectName": "testandoSpring"
+        },
+        {
+            "type": "java",
+            "name": "testeConexao",
+            "request": "launch",
+            "mainClass": "testeConexao",
+            "projectName": "Java_24b6655f"
+        },
+        {
+            "type": "java",
+            "name": "teste",
+            "request": "launch",
+            "mainClass": "teste",
+            "projectName": "Java_24b6655f"
+        },
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "internalConsole",
+            "justMyCode": true
+        }
+    ]
+}
