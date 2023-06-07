@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -96,6 +97,7 @@
                 aria-label="Nome do paciente"
                 aria-describedby="botao-de-adicionar"
                 th:value="${cliente.nome}"
+                id="nome"
               />
             </div>
 
@@ -155,6 +157,7 @@
                   placeholder="Peso"
                   aria-label="Peso"
                   th:value="${cliente.peso}"
+                  id="peso"
                 />
               </div>
               <div class="col-sm-4">
@@ -167,6 +170,7 @@
                   placeholder="Altura"
                   aria-label="Altura"
                   th:value="${cliente.altura}"
+                  id="altura"
                 />
               </div>
             </div>
@@ -181,6 +185,7 @@
                 aria-label="Alergias do paciente"
                 aria-describedby="Alergias do paciente"
                 th:value="${cliente.alergias}"
+                id="alergias"
               />
             </div>
 
@@ -195,6 +200,7 @@
                 aria-label="Doenças do paciente"
                 aria-describedby="Doenças do paciente"
                 th:value="${cliente.doencas}"
+                id="doencasPa"
               />
             </div>
 
@@ -1329,7 +1335,7 @@
           </fieldset>
         </form>
         <div class="text-center">
-          <a href="#" class="btn btn-primary my-4">Adicionar</a>
+          <a href="#"  id="btnAdicionar" class="btn btn-primary my-4">Alterar</a>
         </div>
       </div>
     </div>
@@ -1342,6 +1348,59 @@
         fieldset.removeAttribute("disabled");
       });
     </script>
+    <script>
+      $(document).ready(function() {
+          $("#btnAdicionar").click(function(e) {
+              e.preventDefault(); // Prevenir o comportamento padrão do link
+
+
+
+              // Obter o ID do paciente da URL
+              var url = window.location.href;
+              var idPac = url.substring(url.lastIndexOf("/") + 1);
+              // Obter os valores dos campos do formulário
+              var nome = $("#nome").val();
+              var email = $("#email").val();
+              var objetivo = $("#obj").val();
+              var idade = $("#idade").val();
+              var peso = $("#peso").val();
+              var altura = $("#altura").val();
+              var alergias = $("#alergias").val();
+              var doencas = $("#doencasPa").val();
+      
+              // Criar o objeto paciente com os valores dos campos
+              var cliente = {
+                  nome: nome,
+                  email: email,
+                  objetivo: objetivo,
+                  idade: idade,
+                  peso: peso,
+                  altura : altura,
+                  alergias: alergias,
+                  doencas: doencas,
+                  senha: 12345
+              };
+              
+
+              // Enviar uma requisição POST para o servidor
+              $.ajax({
+                  type: "POST",
+                  url: "/alterarPaciente/" + idPac,
+                  data: cliente,
+                  success: function(response) {
+                      // Lidar com a resposta do servidor, se necessário
+                      console.log("Paciente adicionado com sucesso!");
+                      // Redirecionar para a página desejada
+                      window.location.href = "/clientes";
+                  },
+                  error: function(error) {
+                      // Lidar com erros, se necessário
+                      console.log("Ocorreu um erro ao adicionar o paciente: " + error);
+                  }
+              });
+          });
+      });
+      </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
