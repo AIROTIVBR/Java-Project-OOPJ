@@ -1361,24 +1361,200 @@
               // Obter os valores dos campos do formulário
               var nome = $("#nome").val();
               var email = $("#email").val();
+              var sexo = $("#sexo").val();
               var objetivo = $("#obj").val();
               var idade = $("#idade").val();
               var peso = $("#peso").val();
               var altura = $("#altura").val();
               var alergias = $("#alergias").val();
               var doencas = $("#doencasPa").val();
+              var altPeso = $("#altPeso").val();
+              var sangue = $("#sangue").val();
+              var doençasFamilia = $("#doenaasFa").val();
+              var atividadeFisica = $("#atvFis").val();
+              var medicacoes = $("#medicacoes").val();
+              var liquido = $("#liq").val();
+              var recordatorio= $("#recordatorio").val();
+              var total = $("#total").val();
+              var bracoDir = $("#bracoDir").val();
+              var bracoEsq = $("#bracoEsq").val();
+              var pernaDir = $("#pernaDir").val();
+              var pernaEsq = $("#pernaEsq").val();
+              var tronco = $("#tronco").val();
+              var condFis = $("#condFis").val();
+              var totalG = $("#totalG").val();
+              var bracoDirG = $("#bracoDirG").val();
+              var bracoEsqG = $("#bracoEsqG").val();
+              var pernaDirG = $("#pernaDirG").val();
+              var pernaEsqG = $("#pernaEsqG").val();
+              var troncoG = $("#troncoG").val();
+              var idaMet = $("#idaMet").val();
+              var porcenLiq = $("#porcenLiq").val();
+              var gordVisce = $("#gordVisce").val();
+              var massaOsso = $("#massaOsso").val();
+              var DCI = $("#DCI").val();
+              var intPreso = $("#intPreso").val();
+              var diarreia = $("#diarreia").val();
+              var flatu = $("#flatu").val();
+              var eructa = $("#eructa").val();
+              var disLenta = $("#disLenta").val();
+              var azia = $("#azia").val();
+              var nauVom = $("#nauVom").val();
+              var hemo = $("#hemo").val();
+              var afta = $("#afta").val();
+              var sangGeng = $("#sangGeng").val();
+              var altLingua = $("#altLingua").val();
+              var mauHalito = $("#mauHalito").val();
+              var labioRach = $("#labioRach").val();
+              var altApetite = $("#altApetite").val();
+              var perPaladar = $("#perPaladar").val();
+              var flaMusc = $("#flaMusc").val();
+              var infecFreq = $("#infecFreq").val();
+              var dorCabeca = $("#dorCabeca").val();
+              var diabetes = $("#diabetes").val();
+              var hipoGli = $("#hipoGli").val();
+              var altTrigli = $("#altTrigli").val();
+              var altColest = $("#altColest").val();
+              var tonturas = $("#tonturas").val();
+              var fraq = $("#fraq").val();
+              var espinhas = $("#espinhas").val();
+              var mepc = $("#mepc").val();
+              var anemia = $("#anemia").val();
+              var quedaCabelo = $("#quedaCabelo").val();
+              var unhaFrag = $("#unhaFrag").val();
+              var peleRess = $("#peleRess").val();
+              var altUnha = $("#altUnha").val();
+              var osteo = $("#osteo").val();
+              var dorMusc = $("#dorMusc").val();
+              var amort = $("#amort").val();
+              var difCicat = $("#difCicat").val();
+              var caimbra = $("#caimbra").val();
+              var altCardio = $("#altCardio").val();
+              var manchaRoxa = $("#manchaRoxa").val();
+              var pressAlta = $("#pressAlta").val();
+              var pressBaixa = $("#pressBaixa").val();
+              var inchaco = $("#inchaco").val();
+              var transExc = $("#transExc").val();
+              var TPM = $("#TPM").val();
+              var altMenst = $("#altMenst").val();
+              var ansiedade = $("#ansiedade").val();
+              var irrita = $("#irrita").val();
+              var nervo = $("#nervo").val();
+              var hiper = $("#hiper").val();
+              var difAtencao = $("#difAtencao").val();
+              var difMemoria = $("#difMemoria").val();
+              var fadiga = $("#fadiga").val();
+              var sono = $("#sono").val();
+              var insonia = $("#insonia").val();
+              var altOuvido = $("#altOuvido").val();
+              var altOlho = $("#altOlho").val();
+              var altHumor = $("#altHumor").val();
+              var depre = $("#depre").val();
+              var sindPan = $("#sindPan").val();
+              var microVasos = $("#microVasos").val();
+              var celulite = $("#celulite").val();
+              var ardencia = $("#ardencia").val();
+              var bruxismo = $("#bruxismo").val();
+              var fumante = $("#fumante").val();
+
       
               // Criar o objeto paciente com os valores dos campos
               var cliente = {
                   nome: nome,
                   email: email,
+                  sexo: sexo,
                   objetivo: objetivo,
                   idade: idade,
                   peso: peso,
                   altura : altura,
                   alergias: alergias,
                   doencas: doencas,
-                  senha: 12345
+                  altPeso: altPeso,
+                  senha: 12345,
+                  fumante: fumante,
+                  bruxismo: bruxismo,
+                  ardencia: ardencia,
+                  celulite: celulite,
+                  microVasos: microVasos,
+                  sindPan: sindPan,
+                  depre: depre,
+                  altuHumor: altHumor,
+                  altOlho: altOlho,
+                  altOuvido: altOuvido,
+                  insonia: insonia,
+                  sono: sono,
+                  fadiga: fadiga,
+                  difMemoria: difMemoria,
+                  difAtencao: difAtencao,
+                  hiper: hiper,
+                  nervo: nervo,
+                  irrita: irrita,
+                  ansiedade: ansiedade,
+                  altMenst: altMenst,
+                  TPM: TPM,
+                  transExc: transExc,
+                  medicacoes :medicacoes,
+                  liquido: liq,
+                  recordatorio:recordatorio,
+                  total: total,
+                  bracoDir: bracoDir,
+                  bracoEsq: bracoEsq,
+                  pernaDir: pernaDir,
+                  pernaEsq: pernaEsq,
+                  tronco: tronco,
+                  condFis: condFis,
+                  totalG: totalG,
+                  bracoDirG: bracoDirG,
+                  bracoEsqG: bracoEsqG,
+                  pernaDirG: pernaDirG,
+                  pernaEsqG: pernaEsqG,
+                  troncoG: troncoG,
+                  idaMet: idaMet,
+                  porcenLiq: porcenLiq,
+                  gordVisce: gordVisce,
+                  massaOsso: massaOsso,
+                  DCI: DCI,
+                  intPreso: intPreso,
+                  diarreia: diarreia,
+                  flatu: flatu,
+                  eructa: eructa,
+                  disLenta: disLenta,
+                  azia: azia,
+                  nauVom: nauVom,
+                  hemo: hemo,
+                  afta: afta,
+                  sangGeng: sangGeng,
+                  altLingua: altLingua,
+                  mauHalito: mauHalito,
+                  labioRach: labioRach,
+                  altApetite: altApetite,
+                  perPaladar: perPaladar,
+                  flaMusc: flaMusc,
+                  infecFreq: infecFreq,
+                  dorCabeca: dorCabeca,
+                  diabetes: diabetes,
+                  hipoGli: hipoGli,
+                  altTrigli: altTrigli,
+                  altColest: altColest,
+                  tonturas: tonturas,
+                  fraq: fraq,
+                  espinhas: espinhas,
+                  mepc: mepc,
+                  anemia: anemia,
+                  quedaCabelo: quedaCabelo,
+                  unhaFrag: unhaFrag,
+                  peleRess: peleRess,
+                  altUnha: altUnha,
+                  osteo: osteo,
+                  dorMusc: dorMusc,
+                  amort: amort,
+                  difCicat: difCicat,
+                  caimbra: caimbra,
+                  altCardio: altCardio,
+                  manchaRoxa: manchaRoxa,
+                  pressAlta: pressAlta,
+                  pressBaixa: pressBaixa,
+                  inchaco: inchaco
               };
               
 
