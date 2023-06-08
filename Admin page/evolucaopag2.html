@@ -68,20 +68,19 @@
           </div>
   
           <div id="inputsContainer">
-            <div class="row">
-              <div class="col-md-6">
+            <div class="first-input">
+            <div class="first-input-container">
+              <div class="col-md-6 ">
                 <div class="input-group mb-3">
                   <input type="date" class="form-control rounded-20 data-input" />
                   <button class="btn btn-primary rounded-20 custom-button" type="button"
-                    onclick="toggleTexto(this)">->
-                  </button>
+                    onclick="toggleTexto(this)">-></button>
                 </div>
               </div>
               <div class="col-md-6">
                 <textarea class="form-control rounded-20 custom-input" rows="4" style="display: none;"></textarea>
                 <button class="btn btn-success rounded-20 mt-2 custom-send-button custom-heigth" type="button"
-                  onclick="salvarConteudo(this)">Enviar
-                </button>
+                  onclick="salvarConteudo(this)">Enviar</button>
               </div>
             </div>
           </div>
@@ -93,22 +92,35 @@
     <script>
       var contador = 1; // Inicializa o contador com o número de botões existentes
   
-      function toggleTexto(button) {
-        var parentDiv = button.parentNode.parentNode;
-        var textoInput = parentDiv.nextElementSibling.querySelector("textarea");
-        var sendButton = parentDiv.nextElementSibling.querySelector(".custom-send-button");
-  
-        if (textoInput.style.display === "none") {
-          textoInput.style.display = "block";
-          button.innerText = "<-";
-          sendButton.style.display = "block";
-        } else {
-          textoInput.style.display = "none";
-          button.innerText = "->";
-          sendButton.style.display = "none";
-        }
-      }
-  
+    function toggleTexto(button) {
+  var parentDiv = button.parentNode.parentNode;
+  var textoInput = parentDiv.nextElementSibling.querySelector("textarea");
+  var sendButton = parentDiv.nextElementSibling.querySelector(".custom-send-button");
+
+  if (textoInput.style.display === "none") {
+    textoInput.style.display = "block";
+    button.innerText = "<-";
+    sendButton.style.display = "block";
+
+    // Verifica se é o primeiro par de inputs e adiciona a classe ao contêiner
+    if (parentDiv.classList.contains("first-input-container")) {
+      parentDiv.classList.remove("first-input-container");
+    }
+  } else {
+    textoInput.style.display = "none";
+    button.innerText = "->";
+    sendButton.style.display = "none";
+  }
+}
+
+    function ocultarBotaoEnviar() {
+  var firstInputDiv = document.querySelector(".first-input");
+  var sendButton = firstInputDiv.querySelector(".custom-send-button");
+  sendButton.style.display = "none";
+}
+
+ocultarBotaoEnviar();
+
       function adicionarEvolucao() {
         var inputsContainer = document.getElementById("inputsContainer");
   
@@ -163,6 +175,8 @@
         inputsContainer.appendChild(rowDiv);
   
         contador++;
+
+        
       }
   
       function salvarConteudo(button) {
@@ -208,81 +222,82 @@
 }
 
 .cor-navbar {
-          background-color: #343a40;
-        }
+  background-color: #343a40;
+}
     
-        .card-bg {
-          background-color: #f8f9fa;
-          border-radius: 40px;
-        }
+.card-bg {
+  background-color: #f8f9fa;
+  border-radius: 40px;
+}
     
-        button {
-          background-color: #26b77b;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          min-height: 7vh;
-          width: 100px;
-          border-radius: 80px;
-        }
+button {
+  background-color: #26b77b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 7vh;
+  width: 100px;
+  border-radius: 80px;
+}
     
-        .rounded-20 {
-          border-radius: 20px;
+.rounded-20 {
+  border-radius: 20px;
         
-        }
+}
     
-        .data-input {
-          max-width: 150px;
-          min-height: 5vh;
-          min-width: 20%;
+.data-input {
+  max-width: 150px;
+  min-height: 5vh;
+  min-width: 20%;
          
-        }
+}
     
-        textarea {
-          height: 9rem;
+textarea {
+  height: 9rem;
          
-        }
+}
     
-        .custom-button {
-          width: 60px;
-          border-radius: 40px;
-          background-color: rgb(58, 141, 58);
-        }
-        /*input de texto*/
-        .custom-input {
-          border-radius: 20px;
-          background-color: rgb(214, 214, 214);
-          border: 2px solid green;
-        }
-        /*botao de enviar par de inputs*/
-        .custom-send-button {
-          display: none;
-          width: 80px;
-          display: flex;
-          color: white;
-          justify-content: center;
-          align-items: center;
-          min-height: 5vh;
-          min-width: 20%; 
-          width: 15vh;
-          border-radius: 40px;
-          margin-bottom: 3em;
+.custom-button {
+  width: 60px;
+  border-radius: 40px;
+  background-color: rgb(58, 141, 58);
+}
+/*input de texto*/
+.custom-input {
+  border-radius: 20px;
+  background-color: rgb(214, 214, 214);
+  border: 2px solid green;
+}
+/*botao de enviar par de inputs*/
+.custom-send-button {
+  display: none;
+  width: 80px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  min-height: 5vh;
+  min-width: 20%; 
+  width: 15vh;
+  border-radius: 40px;
+  margin-bottom: 3em;
           
-        }
-        /*botao de adicionar evolução*/
-        .custom-add-button {
-     
-        background-color: rgb(58, 141, 58);
-        display: flex;
-        color: white;
-        justify-content: center;
-        align-items: center;
-        min-height: 5vh;
-        min-width: 20%; 
-        width: 15vh;
-        border-radius: 40px;
-        margin-bottom: 2em;
-      
-
- }
+}
+/*botao de adicionar evolução*/
+  .custom-add-button {   
+  background-color: rgb(58, 141, 58);
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  min-height: 5vh;
+  min-width: 20%; 
+  width: 15vh;
+  border-radius: 40px;
+  margin-bottom: 2em;
+}
+.first-input-container {
+  display: flex;
+  justify-content: flex-end;
+}
 </style>
